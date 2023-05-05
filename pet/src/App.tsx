@@ -23,7 +23,7 @@ function App() {
         </Container>
       </main>
       <footer>
-        <div className="text-center">2023 PET</div>
+        <div className="text-center">2023 P.E.T</div>
       </footer>
     </div>
   );
