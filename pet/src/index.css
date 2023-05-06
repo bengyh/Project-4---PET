@@ -16,3 +16,7 @@
 .rating span {
   color: rgb(160, 160, 3);
 }
+
+img.large {
+  max-width: 100%;
+}
