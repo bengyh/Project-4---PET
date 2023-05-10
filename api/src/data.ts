@@ -19,7 +19,7 @@ export const sampleProducts: Product[] = [
     category: 'Dogs',
     image: '../images/gs.jpeg',
     price: 3000,
-    countInStock: 2,
+    countInStock: 0,
     bread: 'GermanShepherd',
     rating: 4.0,
     numReviews: 10,
