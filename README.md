@@ -1,6 +1,7 @@
 # P.E.T Store
 
-An eCommerce application built with React and Mongo. With features for signup, login, view of order history, cart functions, payment, etc.
+An eCommerce application built with React and Mongo. 
+With features for signup, login, view of order history, cart functions, payment, etc.
 
 ## Technologies Used
 
