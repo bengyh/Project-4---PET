@@ -25,6 +25,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import PlaceOrderPage from './pages/PlaceOrderPage';
 import OrderPage from './pages/OrderPage';
 import AllUsers from './pages/AllUsers';
+import OrderHistoryPage from './pages/OrderHistoryPage';
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const router = createBrowserRouter(
         <Route path="placeorder" element={<PlaceOrderPage />} />
         <Route path="/order/:id" element={<OrderPage />} />
         <Route path="/all-users" element={<AllUsers />} />
+        <Route path="/orderhistory" element={<OrderHistoryPage />} />
       </Route>
     </Route>
   )
