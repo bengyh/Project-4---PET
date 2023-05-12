@@ -44,3 +44,12 @@ userRouter.post(
     });
   })
 );
+
+// /api/users
+userRouter.get(
+  '/',
+  asyncHandler(async (req, res) => {
+    const users = await UserModel.find(); // retrieve the user ID from the request body
+    res.json(users);
+  })
+);
