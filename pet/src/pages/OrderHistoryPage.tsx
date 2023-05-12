@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
