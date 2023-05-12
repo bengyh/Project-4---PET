@@ -8,16 +8,16 @@ import { Store } from '../Store';
 export default function ShippingAddressPage() {
   const navigate = useNavigate();
   const { state, dispatch } = useContext(Store);
-  const {
-    userInfo,
-    cart: { shippingAddress },
-  } = state;
+    const {
+        userInfo,
+        cart: { shippingAddress },
+    } = state;
 
-  useEffect(() => {
-    if (!userInfo) {
-      navigate('/signin?redirect=/shipping');
-    }
-  }, [userInfo, navigate]);
+    useEffect(() => {
+        if (!userInfo) {
+        navigate('/signin?redirect=/shipping');
+        }
+    }, [userInfo, navigate]);
 
   const [fullName, setFullName] = useState(shippingAddress.fullName || '');
   const [address, setAddress] = useState(shippingAddress.address || '');

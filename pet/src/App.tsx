@@ -68,6 +68,14 @@ function App() {
                 >
                   Sign Out
                 </Link>
+                {userInfo.isAdmin && (
+                  <>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as={Link} to="/all-users">
+                      All User Details
+                    </NavDropdown.Item>
+                  </>
+                )}
               </NavDropdown>
             ) : (
               <Link className="nav-link" to="/signin">
