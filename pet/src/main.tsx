@@ -23,6 +23,7 @@ import PaymentMethodPage from './pages/PaymentMethodPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import PlaceOrderPage from './pages/PlaceOrderPage';
 import OrderPage from './pages/OrderPage';
+import AllUsers from './pages/AllUsers';
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
         <Route path="payment" element={<PaymentMethodPage />} />
         <Route path="placeorder" element={<PlaceOrderPage />} />
         <Route path="/order/:id" element={<OrderPage />} />
+        <Route path="/all-users" element={<AllUsers />} />
       </Route>
     </Route>
   )
