@@ -65,9 +65,13 @@ function App() {
                 id="basic-nav-dropdown"
                 className="dropdown-menu-start"
               >
-                <LinkContainer to="/orderhistory">
-                  <NavDropdown.Item>Order History</NavDropdown.Item>
-                </LinkContainer>
+                {!userInfo.isAdmin && (
+                  <>
+                    <LinkContainer to="/orderhistory">
+                      <NavDropdown.Item>Order History</NavDropdown.Item>
+                    </LinkContainer>
+                  </>
+                )}
                 <Link
                   className="dropdown-item"
                   to="#signout"

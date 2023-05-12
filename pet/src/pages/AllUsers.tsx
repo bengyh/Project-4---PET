@@ -42,6 +42,18 @@ export default function AllUsers() {
                 <td>{user.name}</td>
                 <td>{user.email}</td>
                 <td>{user.isAdmin ? 'Yes' : 'No'}</td>
+                <td>
+                  <button
+                    onClick={() => {
+                      apiClient
+                        .delete(`api/users/${user._id}`)
+                        .then(() => window.location.reload())
+                        .catch((err) => console.log(err));
+                    }}
+                  >
+                    Delete
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
